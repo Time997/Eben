@@ -498,6 +498,34 @@
             text-decoration: underline;
         }
 
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-label {
+            text-align: center;
+            font-weight: 600;
+            color: #667eea;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
         @media (max-width: 768px) {
             .header {
                 padding: 40px 20px;
@@ -863,6 +891,14 @@
             </div>
             <div class="modal-body">
                 <div class="info-section">
+                    <h3>Project Video Demonstration</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/OyPJHXK9YRs" title="Pwnagotchi AI Network Learning Device" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-label">Pwnagotchi in operation - AI learning from WiFi networks</p>
+                </div>
+
+                <div class="info-section">
                     <h3>Hardware Components</h3>
                     <div class="hardware-grid">
                         <div class="hw-item">Raspberry Pi Zero 2 W</div>
@@ -976,6 +1012,14 @@
                 <button class="close-btn" onclick="closeModal('pump')">&times;</button>
             </div>
             <div class="modal-body">
+                <div class="info-section">
+                    <h3>Project Video Demonstration</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/1OGTI2KJf0Q" title="Peristaltic Pump Flow Monitor" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-label">Peristaltic pump with real-time flow rate monitoring</p>
+                </div>
+
                 <div class="info-section">
                     <h3>Hardware Components</h3>
                     <div class="hardware-grid">
